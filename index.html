@@ -4,16 +4,86 @@
   <title>Test</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/prac.css">
    </head>
 <body>
-<section id="#home" class="wpb_wrapper">
-<div class="container-fluid" style="opacity: 1;background: #000000;">
+<header class="container-fluid" id="navbar">
+<nav class="navbar sticky-top navbar-toggleable-sm navbar-expand-md bg-dark navbar-dark">
+    <button class="navbar-toggler mr-auto custom-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo"/></a>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#" data-toggle="dropdown">
+                HOME <i class="mobile-arrows fa fa-angle-right d-block d-sm-none"></i></a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Movie Home</a>
+                    <a class="dropdown-item" href="#">Trailer Showcase</a>
+                    <a class="dropdown-item" href="#">Film Festival Home</a>
+                    <a class="dropdown-item" href="#">Video Carousel Home</a>
+                    <a class="dropdown-item" href="#">Fullscreen Showcase</a>
+                    <a class="dropdown-item" href="#">Filmography Home</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#" data-toggle="dropdown">
+                PAGES <i class="mobile-arrows fa fa-angle-right d-block d-sm-none"></i></a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">About Us</a>
+                    <a class="dropdown-item" href="#">About Director</a>
+                    <a class="dropdown-item" href="#">Team</a>
+                    <a class="dropdown-item" href="#">Process</a>
+                    <a class="dropdown-item" href="#">Contact Us</a>
+                    <a class="dropdown-item" href="#">FAQ</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#" data-toggle="dropdown">
+                PORTFOLIO <i class="mobile-arrows fa fa-angle-right d-block d-sm-none"></i></a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Link 31</a>
+                    <a class="dropdown-item" href="#">Link 32</a>
+                    <a class="dropdown-item" href="#">Link 33</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">BLOG</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">SHOP</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">ELEMENTS</a>
+            </li>
+            <li class="nav-item d-none d-sm-block">
+                <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item d-none d-sm-block">
+                <a class="nav-link" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item d-none d-sm-block">
+                <a class="nav-link" href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item d-none d-sm-block">
+                <a class="nav-link" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item d-none d-sm-block">
+                <a class="nav-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+</header>
 
-<div class="pt-4 main" style="width:33%;">
-<img src="images/h9-logo-img.png" style="margin:18%;" alt="" />
+
+<section id="#gallery_sec" class="container wpb_wrapper">
+<div style="opacity: 1;background: #000000; position: relative">
+<div class="pt-4 main">
+<img src="images/h9-logo-img.png" style="position: absolute; left: 10%; padding:5%" alt="" />
 </div>
 <div class="sub-main">
  <section>
@@ -25,7 +95,7 @@
 			</div>
         </div>
         <div class="img-container">
-            <img src="images/h-gallery-img2.jpg" alt="Avatar" width="600" class="image" data-toggle="modal" data-bigimage="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"  data-target="#myModal">
+            <img src="images/h-gallery-img2.jpg" alt="Avatar" class="image" data-toggle="modal" data-bigimage="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1"  data-target="#myModal">
             <div class="overlay">
                 <h3 class="show-text">
 				<i class="fa fa-play" style="font-size:32px;color:rgba(204,150,2)"></i><br/>
@@ -35,7 +105,7 @@
 			</div>
         </div>
         <div class="img-container">
-            <img src="images/h-gallery-img3.jpg" alt="Avatar" class="image" data-toggle="modal" data-bigimage="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" data-target="#myModal">
+            <img src="images/h-gallery-img3.jpg" alt="Avatar" class="image" data-toggle="modal" data-bigimage="https://www.youtube.com/embed/zpOULjyy-n8?autoplay=1" data-target="#myModal">
 			<div class="overlay">
                  <h3 class="show-text">
 				<i class="fa fa-play" style="font-size:32px;color:rgba(204,150,2)"></i><br/>
@@ -76,10 +146,10 @@
         </div>
 
     </div>
-	
+
 	<div class="gallery">
         <div class="img-container">
-            <img src="images/h-gallery-img2.jpg" alt="Avatar" width="600" class="image" data-toggle="modal" data-bigimage="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"  data-target="#myModal">
+            <img src="images/h-gallery-img2.jpg" alt="Avatar" class="image" data-toggle="modal" data-bigimage="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"  data-target="#myModal">
             <div class="overlay">
                 <h3 class="show-text">
 				<i class="fa fa-play" style="font-size:32px;color:rgba(204,150,2)"></i><br/>
@@ -136,10 +206,10 @@
         </div>
 
     </div>
-	
+
 	<div class="gallery">
         <div class="img-container">
-            <img src="images/h-gallery-img2.jpg" alt="Avatar" width="600" class="image" data-toggle="modal" data-bigimage="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"  data-target="#myModal">
+            <img src="images/h-gallery-img2.jpg" alt="Avatar" class="image" data-toggle="modal" data-bigimage="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"  data-target="#myModal">
             <div class="overlay">
                 <h3 class="show-text">
 				<i class="fa fa-play" style="font-size:32px;color:rgba(204,150,2)"></i><br/>
@@ -197,6 +267,7 @@
         </div>
 
     </div>
+     <!---->
  </section>
 	</div>
 	</div>
@@ -207,33 +278,27 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
 
-      
+
       <div class="modal-body">
 
        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
-        </button>        
+        </button>
 
 			<div class="embed-responsive embed-responsive-16by9">
-  <iframe id="image" class="embed-responsive-item" src=""></iframe>
-	</div>
-                <!-- <img src="//media.tenor.com/images/556e9ff845b7dd0c62dcdbbb00babb4b/tenor.gif" alt="" id="image" class="img-fluid"> -->
-
-        
-        
+                 <iframe id="image" class="embed-responsive-item" src="" allow="autoplay; encrypted-media"></iframe>
+	        </div>
       </div>
-
     </div>
   </div>
-</div> 
+</div>
 </section>
 
 
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
- 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
 <script>
 $(document).ready(function() {
 
@@ -242,23 +307,33 @@ var $imageSrc;
 $('.gallery img').click(function() {
     $imageSrc = $(this).data('bigimage');
 });
-  
+
+//    var $imageSrc2;
+//    $('.overlay .fa.fa-play').click(function() {
+//        $imageSrc2 = $(this).prev('img').data('bigimage');
+//        $(this).on('shown.bs.modal', function (e) {
+//            $("#image").attr('src', $imageSrc2  );
+//
+//        })
+//    });
+
   
 // when the modal is opened autoplay it  
 
-$('#myModal, .fa fa-play').on('shown.bs.modal', function (e) {
+$('#myModal').on('shown.bs.modal', function (e) {
 $("#image").attr('src', $imageSrc  );
 })
+
+//    $('.overlay').on('shown.bs.modal', function (e) {
+//        $("#image").attr('src', $imageSrc2  );
+//    })
+
 // reset the modal image
-$('#myModal, .fa fa-play').on('hide.bs.modal', function (e) {
+$('#myModal').on('hide.bs.modal', function (e) {
     // a poor man's stop video
     $("#image").attr('src',''); 
 }) 
 
-
-
-
-  
 // document ready  
 });
 

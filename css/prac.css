@@ -1,9 +1,75 @@
-#home{
-	overflow-y: hidden;
-	overflow-x:scroll;
+body{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.bg-dark{
+    background-color: #ffffff!important;
+}
+.nav-item{
+ padding-right: 3%;
+}
+#navbar{
+    margin-bottom: 80px !important;
+}
+.navbar{
+    padding: 1.3rem 1rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+.navbar-dark .navbar-nav .nav-link
+{
+    color: #000000;
+}
+.navbar-dark .navbar-nav .nav-link{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+}
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link
+{
+    color: #cc9602;
+}
+
+.custom-toggler.navbar-toggler, .custom-toggler.navbar-toggler:focus, .custom-toggler.navbar-toggler:hover {
+    border-color: transparent;
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(143, 105, 1, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.dropdown-menu{
+    padding: 0 !important;
+    margin: 1.4rem 0 0;
+}
+
+.dropdown-item{
+    color: #ffffff;
+    background-color: #000000;
+    font-weight: normal;
+    font-size: 13px;
+    padding:.7rem 1.5rem;
+    min-width: 14rem;
+}
+.dropdown-item:hover{
+    color: #cc9602;
+    background-color: #000000;
+}
+
+@media (min-width: 768px) {
+    #collapsibleNavbar {
+        padding: 0 15px;
+    }
+}
+#gallery_sec{
+    overflow: hidden;
+    low-y: hidden;
+    overflow-x:visible!important;
+	/*overflow-x:scroll;*/
 	overflow: -moz-scrollbars-vertical;
-    width:150%;
+    /*width:100%;*/
     height:100%;
+    position: relative;
 }
 
 .gallery{
@@ -16,7 +82,7 @@
 	background: 0 0;
 	border: 0;
 	margin:0;
-	padding: 0;
+	padding: 0 0;
 	vertical-align: baseline;
 	outline: 0;
 }
@@ -25,8 +91,9 @@
 	background-image: url("../images/h9-main-image.jpg");
     background-attachment: fixed;
 	background-size: cover;
-	height: 95.9vh;
-	width: auto;
+	height: 85vh;
+	width: 45%;
+    padding: 10rem;
 	background-color: #000000;
     float:left;
 }
@@ -35,7 +102,7 @@
 	padding-left:0;
 	background-color: #000000;
     float:right;
-    width:67%;
+    width:55%;
 }
 
 .modal-dialog {
@@ -46,14 +113,14 @@
 .modal-body {
   position:relative;
   padding:0px;
-  min-height:400px;
+  min-height:230px;
   background:#ccc;
 }
 
 .close {
   position:absolute;
-  right:-30px;
-  bottom:0;
+  right:10px;
+  bottom:-30px;
   z-index:999;
   font-size:2rem;
   font-weight: normal;
@@ -187,6 +254,9 @@ opacity: 0;
     opacity: 1;
   }
 }
+.img-container .film, .img-container .film-name{
+    opacity: 0;
+}
   .img-container:hover .film, .img-container:hover .film-name{
       opacity: 1;
     }
@@ -195,6 +265,9 @@ opacity: 0;
         width:100%;
         height:100%;
     }
+    .main{
+    width: 100vw;
+    }
     .main, .sub-main{
         float: none;
     }
@@ -202,10 +275,10 @@ opacity: 0;
         display: block;
     }
     .image{
-        width: 100vh;
+        width: 100vw;
     }
     .showcase{
-        width: 100vh;
+        width: 100vw;
     }
     .showcase2{
         width: calc(100vw - 30px);
@@ -213,6 +286,37 @@ opacity: 0;
     }
     .overlay2{
         top:2%;
-        left: 85%;
+        left: 8%;
+    }
+    .navbar-dark .navbar-nav .nav-link{
+        font-size: 11px;
+        border-bottom: 1px solid #eaeaea;
+    }
+    a.dropdown-item{
+        font-size: 11px;
+        border-bottom: 1px solid #eaeaea;
+        margin-left: 5%;
+        padding-left: 0;
+    }
+    .mobile-arrows{
+        position: absolute;
+        right: 0;
+        top: 0;
+        line-height: 35px;
+        height: 35px;
+        padding-right: 10px;
+        width: 50%;
+        text-align: right;
+    }
+    .dropdown-menu{
+        border: 0;
+    }
+    .dropdown-item{
+        color: #000000;
+        background-color: #ffffff;
+        font-size: 11px;
+        padding:.7rem 1.5rem;
+        min-width: 14rem;
     }
 }
+
