@@ -18,7 +18,7 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
-                <a class="nav-link" href="#" data-toggle="dropdown">
+                <a class="nav-link active" href="#" data-toggle="dropdown">
                 HOME <i class="mobile-arrows fa fa-angle-right d-block d-sm-none"></i></a>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">Movie Home</a>
@@ -302,11 +302,21 @@
 <script>
 $(document).ready(function() {
 
+$('.dropdown').on('mouseover', function(){
+$(this).find('.dropdown-menu').show();
+});
+$('.dropdown').on('mouseout', function(){
+$(this).find('.dropdown-menu').hide();
+});
+
 // Gets the video src from the data-src on each button
 var $imageSrc;  
 $('.gallery img').click(function() {
     $imageSrc = $(this).data('bigimage');
 });
+
+
+
 
 //    var $imageSrc2;
 //    $('.overlay .fa.fa-play').click(function() {
