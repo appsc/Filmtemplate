@@ -4,7 +4,6 @@
     <list default="true" id="2221b907-b12b-4092-a042-58a228c41967" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/prac.css" afterPath="$PROJECT_DIR$/css/prac.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,17 +14,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="prac.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="prac.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/prac.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="248" column="2" lean-forward="true" selection-start-line="248" selection-start-column="2" selection-end-line="248" selection-end-column="2" />
+            <state relative-caret-position="130">
+              <caret line="57" column="33" lean-forward="false" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="281">
@@ -41,7 +40,6 @@
     <findStrings>
       <find>&lt;div class=&quot;img-container col&quot;&gt;</find>
       <find>.img-container</find>
-      <find>.navbar</find>
       <find>width</find>
       <find>.overlay2</find>
       <find>border-bottom</find>
@@ -49,6 +47,11 @@
       <find>overlay</find>
       <find>class=&quot;fa fa-play&quot; style=&quot;font-size:32px;color:rgba(204,150,2)&quot;</find>
       <find>.overlay</find>
+      <find>.navbar-brand</find>
+      <find>.navbar-nav</find>
+      <find>.navbar</find>
+      <find>.dropdown-menu</find>
+      <find>.navbar-dark .navbar-nav .nav-link</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;div class=&quot;img-container&quot;&gt;</replace>
@@ -64,8 +67,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/prac.html" />
-        <option value="$PROJECT_DIR$/css/prac.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/prac.css" />
       </list>
     </option>
   </component>
@@ -146,12 +149,12 @@
       <updated>1533894473012</updated>
       <workItem from="1533894478520" duration="11533000" />
       <workItem from="1534223278728" duration="26858000" />
-      <workItem from="1534405670316" duration="17134000" />
+      <workItem from="1534405670316" duration="19755000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55525000" />
+    <option name="totallyTimeSpent" value="58146000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -212,18 +215,18 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/prac.html" />
-    <entry file="file://$PROJECT_DIR$/css/prac.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="248" column="2" lean-forward="true" selection-start-line="248" selection-start-column="2" selection-end-line="248" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
           <caret line="389" column="0" lean-forward="false" selection-start-line="389" selection-start-column="0" selection-end-line="389" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/prac.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="57" column="33" lean-forward="false" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
           <folding />
         </state>
       </provider>
