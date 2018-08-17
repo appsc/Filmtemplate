@@ -130,7 +130,7 @@ body{
 }
 
 .gallery{
-    width: 150vw;
+    width: 160vw;
     height: auto;
 	display: flex;
 	margin-left: 0px !important;
@@ -161,7 +161,7 @@ body{
 	padding-left:0;
 	background-color: #000000;
     float:right;
-    width:75%;
+    width:80%;
 }
 
 .modal-dialog {
@@ -262,7 +262,7 @@ body{
 
   .show-text{
       text-transform:uppercase;
-      font-size: 20px;
+      font-size: 16px;
       letter-spacing: 2px;
       font-family: "Open Sans",sans-serif;
       font-weight: 600;
