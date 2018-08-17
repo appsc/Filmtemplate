@@ -27,7 +27,7 @@ body{
 }
 
 #navbar{
-    margin-bottom: 80px !important;
+    margin-bottom: 81px !important;
 }
 
 .navbar{
@@ -273,6 +273,16 @@ body{
     font-size:32px;
     color:rgba(204,150,2,1);
 }
+
+.play-comm{
+    position: absolute;
+    opacity: 0;
+    top: 40%;
+    left: 40%;
+    font-size:32px;
+    color:rgba(204,150,2,1);
+}
+
 .film{
     position: absolute;
     width: 100%;
@@ -298,6 +308,23 @@ body{
  .film:hover::before, .film-name:hover::before{
 	 text-transform:uppercase;
  }
+
+.commercial{
+    padding: 2%;
+    border: 1px solid silver;
+}
+
+. commercial-img{
+    transition: transform .2s;
+}
+.commercial:hover{
+    opacity: 0.5;
+    transform: scale(1.02);
+}
+
+.commercial:hover .play-comm{
+    opacity: 1;
+}
 
 @media (min-width: 768px) {
     #collapsibleNavbar {
