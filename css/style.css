@@ -42,6 +42,8 @@ body{
 
 .navbar-brand{
 	padding-bottom: 1.3rem !important;
+    font-family: "Open Sans",sans-serif;
+    color: #000000 !important;
 }
 
 .navbar-dark .navbar-nav .nav-link
@@ -103,7 +105,7 @@ body{
     overflow-x:visible!important;
 	/*overflow-x:scroll;*/
 	overflow: -moz-scrollbars-vertical;
-    /*width:100%;*/
+    width:250%;
     height:100%;
     position: relative;
 }
@@ -128,6 +130,8 @@ body{
 }
 
 .gallery{
+    width: 150vw;
+    height: auto;
 	display: flex;
 	margin-left: 0px !important;
 	margin-right: 0px !important;
@@ -146,9 +150,9 @@ body{
 	background-image: url("../images/h9-main-image.jpg");
     background-attachment: fixed;
 	background-size: cover;
-	height: 85vh;
-	width: 45%;
-    padding: 10rem;
+    height: 100%;
+	/*width: 25%;*/
+    /*padding: 6.2rem;*/
 	background-color: #000000;
     float:left;
 }
@@ -157,7 +161,7 @@ body{
 	padding-left:0;
 	background-color: #000000;
     float:right;
-    width:55%;
+    width:75%;
 }
 
 .modal-dialog {
@@ -196,14 +200,14 @@ body{
       /*width: 100%;*/
       max-width: 100%;
 	  padding-left: 0;
-      padding-right: 8%;
+      padding-right: 3%;
 	background-color: #000000;
   }
 
   .image {
       display: block;
-      width: auto;
-      height: 100%;
+      width: 100%;
+      height: auto;
     background: rgb(0, 0, 0);
       background: rgba(0, 0, 0, 0.5);
 	opacity: 1;
@@ -231,7 +235,7 @@ body{
 
   .overlay2 {
       position: absolute;
-      top: 7%;
+      top: 4%;
 	  left: 5%;
       color: #f1f1f1;
 		width: 70%;
@@ -245,8 +249,8 @@ body{
   
   .showcase{
       display: block;
-      width: auto;
-      height: 100%;
+      width: 100%;
+      height: auto;
     background: rgba(204,150,2,.7);
 	}
 
@@ -288,6 +292,7 @@ body{
     font-family: "built_titling_el",sans-serif;
     font-size: 30px;
     font-weight: 700;
+    letter-spacing: 3px;
 }
 
  .film:hover::before, .film-name:hover::before{
