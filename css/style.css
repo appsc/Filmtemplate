@@ -90,6 +90,18 @@ body{
     height:100%;
     position: relative;
 }
+.vl {
+    position: fixed;
+    border-left: 20px solid #ffffff;
+    height: 100vh;
+    left: 0;
+}
+.v2 {
+    position: fixed;
+    border-right: 20px solid #ffffff;
+    height: 100vh;
+    right: 0;
+}
 
 .gallery{
 	display: flex;
