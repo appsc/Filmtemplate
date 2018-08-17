@@ -15,21 +15,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="298" column="14" lean-forward="true" selection-start-line="298" selection-start-column="14" selection-end-line="298" selection-end-column="14" />
+            <state relative-caret-position="173">
+              <caret line="296" column="22" lean-forward="true" selection-start-line="296" selection-start-column="22" selection-end-line="296" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="107" column="17" lean-forward="false" selection-start-line="107" selection-start-column="17" selection-end-line="107" selection-end-column="17" />
+            <state relative-caret-position="164">
+              <caret line="261" column="0" lean-forward="false" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -54,12 +54,20 @@
       <find>.dropdown-menu</find>
       <find>.navbar-dark .navbar-nav .nav-link</find>
       <find>#gallery_sec</find>
+      <find>.film-name</find>
+      <find>.play-icon</find>
+      <find>.show-text</find>
+      <find>&lt;h3 class=&quot;show-text&quot;&gt;</find>
+      <find>&lt;/h3&gt;</find>
+      <find>.film</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;div class=&quot;img-container&quot;&gt;</replace>
       <replace>alt=&quot;Avatar&quot;</replace>
       <replace>class=&quot;play-icon fa fa-play&quot;</replace>
       <replace>class=&quot;film-name&quot;</replace>
+      <replace>&lt;h4 class=&quot;show-text&quot;&gt;</replace>
+      <replace>&lt;/h4&gt;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -154,12 +162,12 @@
       <workItem from="1533894478520" duration="11533000" />
       <workItem from="1534223278728" duration="26858000" />
       <workItem from="1534405670316" duration="19819000" />
-      <workItem from="1534479888856" duration="3104000" />
+      <workItem from="1534479888856" duration="6811000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61314000" />
+    <option name="totallyTimeSpent" value="65021000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -271,18 +279,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="107" column="17" lean-forward="false" selection-start-line="107" selection-start-column="17" selection-end-line="107" selection-end-column="17" />
+        <state relative-caret-position="173">
+          <caret line="296" column="22" lean-forward="true" selection-start-line="296" selection-start-column="22" selection-end-line="296" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="298" column="14" lean-forward="true" selection-start-line="298" selection-start-column="14" selection-end-line="298" selection-end-column="14" />
+        <state relative-caret-position="164">
+          <caret line="261" column="0" lean-forward="false" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
           <folding />
         </state>
       </provider>
