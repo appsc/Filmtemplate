@@ -98,6 +98,13 @@ body{
 }
 .v2 {
     position: fixed;
+    border-bottom: 20px solid #ffffff;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+}
+.v3{
+    position: fixed;
     border-right: 20px solid #ffffff;
     height: 100vh;
     right: 0;
