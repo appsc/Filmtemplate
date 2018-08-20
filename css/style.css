@@ -62,7 +62,7 @@ body{
 
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link
 {
-    color: #cc9602;
+    color: rgb(237, 29, 36);
 }
 
 .custom-toggler.navbar-toggler, .custom-toggler.navbar-toggler:focus, .custom-toggler.navbar-toggler:hover {
@@ -95,7 +95,7 @@ body{
 }
 
 .dropdown-item:hover{
-    color: #cc9602;
+    color: rgb(237, 29, 36);
     background-color: #000000;
 }
 
@@ -257,7 +257,7 @@ body{
     .showcase2{
       width: calc(100% - 30px);
       height: calc(100% - 30px);
-      background: rgba(204,150,2,.7);
+      background: rgb(237, 29, 36);
 	}
 
   .show-text{
@@ -272,7 +272,7 @@ body{
     position: absolute;
     top: 20%;
     font-size:32px;
-    color:rgba(204,150,2,1);
+    color:rgb(237, 29, 36);
 }
 
 .play-comm{
