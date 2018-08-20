@@ -130,7 +130,7 @@ body{
 }
 
 .gallery{
-    width: 160vw;
+    width: 130vw;
     height: auto;
 	display: flex;
 	margin-left: 0px !important;
@@ -243,7 +243,7 @@ body{
       opacity:1;
      color: white;
       font-size: 20px;
-      padding: 78px 40px;
+      padding: 50px 40px;
       text-align: center;
   }
   
@@ -262,11 +262,12 @@ body{
 
   .show-text{
       text-transform:uppercase;
-      font-size: 16px;
+      font-size: 14px;
       letter-spacing: 2px;
       font-family: "Open Sans",sans-serif;
       font-weight: 600;
-  }
+      /*text-align: left;*/
+       }
 .play-icon{
     position: absolute;
     top: 20%;
@@ -281,6 +282,28 @@ body{
     left: 40%;
     font-size:32px;
     color:rgba(204,150,2,1);
+}
+
+.about_logo{
+	margin:0 auto;
+	text-align: center;
+}
+
+.para{
+	text-align: justify;
+	font-size: 14px;
+	padding-top: 20px;
+}
+
+
+.about_para{
+	text-align: justify;
+	font-size: 14px;
+	margin-top: 5%;
+}
+
+.catagiry{
+    margin-left: -70%;
 }
 
 .film{
@@ -303,6 +326,7 @@ body{
     font-size: 30px;
     font-weight: 700;
     letter-spacing: 3px;
+    text-align: center;
 }
 
  .film:hover::before, .film-name:hover::before{

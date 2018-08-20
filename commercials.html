@@ -58,17 +58,17 @@
 </header>
 <section class="container pt-4">
     <div class="row">
-        <div class="col-md-2 commercial"><a data-toggle="modal" data-commvideo="https://www.youtube.com/embed/lp69jB-yvCw?autoplay=1" data-target="#commModal"><img src="images/1.png" alt="" class="img-fluid commercial-img"><i class="play-comm fa fa-play"></i></a></div>
-        <div class="col-md-2 commercial"><a data-toggle="modal" data-commvideo="https://www.youtube.com/embed/SFc-zbpM-2w?autoplay=1" data-target="#commModal"><img src="images/9.png" alt="" class="img-fluid commercial-img"><i class="play-comm fa fa-play"></i></a></div>
-        <div class="col-md-2 commercial"><a data-toggle="modal" data-commvideo="https://www.youtube.com/embed/GAwoLNS0R3w?autoplay=1" data-target="#commModal"><img src="images/4.png" alt="" class="img-fluid commercial-img"><i class="play-comm fa fa-play"></i></a></div>
-        <div class="col-md-2 commercial"><a data-toggle="modal" data-commvideo="https://www.youtube.com/embed/nSOH4f88t5I?autoplay=1" data-target="#commModal"><img src="images/6.png" alt="" class="img-fluid commercial-img"><i class="play-comm fa fa-play"></i></a></div>
-        <div class="col-md-2 commercial"><a data-toggle="modal" data-commvideo="https://www.youtube.com/embed/arjkseRMJ_Q?autoplay=1" data-target="#commModal"><img src="images/18.png" alt="" class="img-fluid commercial-img"><i class="play-comm fa fa-play"></i></a></div>
-        <div class="col-md-2 commercial"><a data-toggle="modal" data-commvideo="https://www.youtube.com/embed/wD9v3Zsdfnk?autoplay=1" data-target="#commModal"><img src="images/20.png" alt="" class="img-fluid commercial-img"><i class="play-comm fa fa-play"></i></a></div>
+        <div class="col-md-2 commercial"><a data-toggle="modal" data-commvideo="https://www.youtube.com/embed/lp69jB-yvCw" data-target="#commModal"><img src="images/1.png" alt="" class="img-fluid commercial-img"><i class="play-comm fa fa-play"></i></a></div>
+        <div class="col-md-2 commercial"><a data-toggle="modal" data-commvideo="https://www.youtube.com/embed/SFc-zbpM-2w" data-target="#commModal"><img src="images/9.png" alt="" class="img-fluid commercial-img"><i class="play-comm fa fa-play"></i></a></div>
+        <div class="col-md-2 commercial"><a data-toggle="modal" data-commvideo="https://www.youtube.com/embed/GAwoLNS0R3w" data-target="#commModal"><img src="images/4.png" alt="" class="img-fluid commercial-img"><i class="play-comm fa fa-play"></i></a></div>
+        <div class="col-md-2 commercial"><a data-toggle="modal" data-commvideo="https://www.youtube.com/embed/nSOH4f88t5I" data-target="#commModal"><img src="images/6.png" alt="" class="img-fluid commercial-img"><i class="play-comm fa fa-play"></i></a></div>
+        <div class="col-md-2 commercial"><a data-toggle="modal" data-commvideo="https://www.youtube.com/embed/arjkseRMJ_Q" data-target="#commModal"><img src="images/18.png" alt="" class="img-fluid commercial-img"><i class="play-comm fa fa-play"></i></a></div>
+        <div class="col-md-2 commercial"><a data-toggle="modal" data-commvideo="https://www.youtube.com/embed/wD9v3Zsdfnk" data-target="#commModal"><img src="images/20.png" alt="" class="img-fluid commercial-img"><i class="play-comm fa fa-play"></i></a></div>
     </div>
     <div class="row">
-        <div class="col-md-2 commercial"><a data-toggle="modal" data-commvideo="https://www.youtube.com/embed/_oFgPuBPD7o?autoplay=1" data-target="#commModal"><img src="images/17.png" alt="" class="img-fluid commercial-img"><i class="play-comm fa fa-play"></i></a></div>
-        <div class="col-md-2 commercial"><a data-toggle="modal" data-commvideo="https://www.youtube.com/embed/xxPlaYjzuaU?autoplay=1" data-target="#commModal"><img src="images/19.jpg" alt="" class="img-fluid commercial-img"><i class="play-comm fa fa-play"></i></a></div>
-        <div class="col-md-2 commercial"><a data-toggle="modal" data-commvideo="https://www.youtube.com/embed/kAr84b4K0F4?autoplay=1" data-target="#commModal"><img src="images/15.png" alt="" class="img-fluid commercial-img"><i class="play-comm fa fa-play"></i></a></div>
+        <div class="col-md-2 commercial"><a data-toggle="modal" data-commvideo="https://www.youtube.com/embed/_oFgPuBPD7o" data-target="#commModal"><img src="images/17.png" alt="" class="img-fluid commercial-img"><i class="play-comm fa fa-play"></i></a></div>
+        <div class="col-md-2 commercial"><a data-toggle="modal" data-commvideo="https://www.youtube.com/embed/xxPlaYjzuaU" data-target="#commModal"><img src="images/19.jpg" alt="" class="img-fluid commercial-img"><i class="play-comm fa fa-play"></i></a></div>
+        <div class="col-md-2 commercial"><a data-toggle="modal" data-commvideo="https://www.youtube.com/embed/kAr84b4K0F4" data-target="#commModal"><img src="images/15.png" alt="" class="img-fluid commercial-img"><i class="play-comm fa fa-play"></i></a></div>
     </div>
     </section>
 
@@ -99,7 +99,13 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
 <script>
-    $(document).ready(function() {
+$(document).ready(function() {
+$('.dropdown').on('mouseover', function(){
+$(this).find('.dropdown-menu').show();
+});
+$('.dropdown').on('mouseout', function(){
+$(this).find('.dropdown-menu').hide();
+});
 // Gets the video src from the data-src on each button
         var $imageSrc3;
         $('.commercial').click(function() {
@@ -109,7 +115,7 @@
 // when the modal is opened autoplay it
 
         $('#commModal').on('shown.bs.modal', function (e) {
-            $("#commimage").attr('src', $imageSrc3  );
+            $("#commimage").attr('src', $imageSrc3+'?autoplay=1'  );
             console.log($imageSrc3);
         })
 
