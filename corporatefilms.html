@@ -72,54 +72,70 @@
 <div class="modal fade" id="commModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-
-            <div class="modal-body">
-
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		    <div class="modal-body">
+			         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
-                </button>
-
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe id="commimage" class="embed-responsive-item" src="" allow="autoplay; encrypted-media"></iframe>
-                </div>
-            </div>
+					</button>
+		        <a class="prev" id="prev-btn">&#10094;</a>
+				<a class="next" id="next-btn">&#10095;</a>
+                        <div class="embed-responsive embed-responsive-16by9">
+                    <iframe title="" id="commimage" class="embed-responsive-item" src="" allow="autoplay; encrypted-media">
+					</iframe>
+				</div>
+			</div>
         </div>
     </div>
 </div>
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-
 <script>
 $(document).ready(function() {
-$('.dropdown').on('mouseover', function(){
-$(this).find('.dropdown-menu').show();
-});
-$('.dropdown').on('mouseout', function(){
-$(this).find('.dropdown-menu').hide();
-});
+	$('.dropdown').on('mouseover', function(){
+		$(this).find('.dropdown-menu').show();
+		});
+		$('.dropdown').on('mouseout', function(){
+			$(this).find('.dropdown-menu').hide();
+		});
 // Gets the video src from the data-src on each button
-        var $imageSrc3;
-        $('.commercial').click(function() {
-            $imageSrc3 = $(this).find('a').data('commvideo');
-        });
-
+    var $imageSrc3;
+	$('.commercial a').click(function() {
+			var $this = $(this);
+			$imageSrc3 = $(this).data('commvideo');
+//next and prev button's hide or show logic	
+		if($this.next('.commercial a').attr('data-commvideo') === undefined)
+			{
+			$('#next-btn').hide();
+			$('#prev-btn').hide();
+		}
+		else{
+			$('#next-btn').show();
+			$('#prev-btn').show();
+		}
+// next click logic			
+		$('#next-btn').on('click', function() {
+			$next = $this.next('.commercial a').attr('data-commvideo');
+			console.log($this.length);
+			$('.modal-body #commimage').attr('src', $next+'?autoplay=1&showinfo=0&controls=0&autohide=1');
+		});
+// prev click logic
+		$('#prev-btn').on('click', function() {
+			$prev = $('.commercial a').prev('.commercial a').attr('data-commvideo');
+			$('.modal-body #commimage').attr('src', $prev+'?autoplay=1&showinfo=0&controls=0&autohide=1');
+		});	
+	});
 // when the modal is opened autoplay it
-
-        $('#commModal').on('shown.bs.modal', function (e) {
-            $("#commimage").attr('src', $imageSrc3+'?autoplay=1' );
-            console.log($imageSrc3);
-        })
-
+    $('#commModal').on('shown.bs.modal', function (e) {
+        var playvideo =  $("#commimage").attr('src', $imageSrc3+'?autoplay=1&showinfo=0&controls=0&autohide=1'  );
+        console.log($imageSrc3);
+	});
 // reset the modal image
-        $('#commModal').on('hide.bs.modal', function (e) {
-            // a poor man's stop video
-            $("#commimage").attr('src','');
-        })
-    });// document ready
+    $('#commModal').on('hide.bs.modal', function (e) {
+        // a poor man's stop video
+        $("#commimage").attr('src','');
+    })
+});// document ready
 </script>
 </body>
 </html>

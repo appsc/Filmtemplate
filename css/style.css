@@ -172,7 +172,7 @@ body{
 .modal-body {
   position:relative;
   padding:0px;
-  min-height:230px;
+  /* min-height:230px; */
   background:#ccc;
 }
 
@@ -257,7 +257,7 @@ body{
     .showcase2{
       width: calc(100% - 30px);
       height: calc(100% - 30px);
-      background: rgb(237, 29, 36);
+      background: rgba(237, 29, 36, 0.67)
 	}
 
   .show-text{
@@ -442,3 +442,34 @@ body{
     }
 }
 
+#prev-btn{
+	position: absolute;
+	top: 42%;
+	left: 0.3%;
+	color: #ffffff;
+	z-index: 1;
+	font-size: 30px;
+	padding: 10px;
+}
+
+#next-btn{
+	position: absolute;
+	top: 42%;
+	right: 0.3%;
+	color: #ffffff;
+	z-index: 1;
+	font-size: 30px;
+	padding: 10px;
+}
+
+
+
+/* Next & previous buttons */
+/* .modal-dialog {width:600px;} */
+/* .thumbnail {margin-bottom:6px;} */
+/* .commercial a{ */
+  /* display: none; */
+/* } */
+/* div.commercial a:first-child { */
+  /* display: block; */
+/* } */
