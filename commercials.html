@@ -60,13 +60,14 @@
 <section id="img-container" class="container pt-4">
     <div class="row">
         <div class="col-md-2 commercial">
-		<a data-toggle="modal" data-commvideo="https://www.youtube.com/embed/lp69jB-yvCw" data-target="#commModal"/><img src="images/1.png" alt="" class="img-fluid commercial-img"><i class="play-comm fa fa-play"></i>
+		<a data-toggle="modal" data-commvideo="https://www.youtube.com/embed/lp69jB-yvCw" data-target="#commModal"><img src="images/1.png" alt="" class="img-fluid commercial-img"><i class="play-comm fa fa-play"></i>
 		</a>
 		</div>
         <div class="col-md-2 commercial"><a data-toggle="modal" data-commvideo="https://www.youtube.com/embed/SFc-zbpM-2w" data-target="#commModal"><img src="images/9.png" alt="" class="img-fluid commercial-img"><i class="play-comm fa fa-play"></i></a></div>
         <div class="col-md-2 commercial">
 		<a data-toggle="modal" data-commvideo="https://www.youtube.com/embed/GAwoLNS0R3w" data-target="#commModal"><img src="images/4.png" alt="" class="img-fluid commercial-img"><i class="play-comm fa fa-play"></i></a>
 		<a data-toggle="modal" data-commvideo="https://www.youtube.com/embed/g5ZBl0HmT-E" data-target="#commModal"></a>
+<a data-toggle="modal" data-commvideo="https://www.youtube.com/embed/lp69jB-yvCw" data-target="#commModal"></a>
 		</div>
 		
         <div class="col-md-2 commercial"><a data-toggle="modal" data-commvideo="https://www.youtube.com/embed/nSOH4f88t5I" data-target="#commModal"><img src="images/6.png" alt="" class="img-fluid commercial-img"><i class="play-comm fa fa-play"></i></a></div>
@@ -113,7 +114,7 @@ $(document).ready(function() {
 		});
 // Gets the video src from the data-src on each button
     var $imageSrc3;
-	$('.commercial a').click(function() {
+	$('.commercial a').on('click',function() {
 			var $this = $(this);
 			$imageSrc3 = $(this).data('commvideo');
 //next and prev button's hide or show logic	
@@ -128,13 +129,14 @@ $(document).ready(function() {
 		}
 // next click logic			
 		$('#next-btn').on('click', function() {
-			$next = $this.next('.commercial a').attr('data-commvideo');
-			console.log($this.length);
+		$next = $this.next('.commercial a').attr('data-commvideo');
+		$this = $this.next('.commercial a');
 			$('.modal-body #commimage').attr('src', $next+'?autoplay=1&showinfo=0&controls=0&autohide=1');
 		});
 // prev click logic
 		$('#prev-btn').on('click', function() {
-			$prev = $('.commercial a').prev('.commercial a').attr('data-commvideo');
+			$prev = $this.prev('.commercial a').attr('data-commvideo');
+			$this = $this.prev('.commercial a');
 			$('.modal-body #commimage').attr('src', $prev+'?autoplay=1&showinfo=0&controls=0&autohide=1');
 		});	
 	});

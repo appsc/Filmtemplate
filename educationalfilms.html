@@ -110,18 +110,23 @@ $(document).ready(function() {
 			$('#prev-btn').hide();
 		}
 		else{
-			$('#next-btn').show();
+		$('#next-btn').show();
 			$('#prev-btn').show();
+			$('#next-btn').show();
+		}
+		if($this.last() || $this.next('.commercial a').last()){
+			$('#next-btn').hide();
 		}
 // next click logic			
 		$('#next-btn').on('click', function() {
 			$next = $this.next('.commercial a').attr('data-commvideo');
-			console.log($this.length);
+			$this = $this.next('.commercial a');
 			$('.modal-body #commimage').attr('src', $next+'?autoplay=1&showinfo=0&controls=0&autohide=1');
 		});
 // prev click logic
 		$('#prev-btn').on('click', function() {
-			$prev = $('.commercial a').prev('.commercial a').attr('data-commvideo');
+			$prev = $this.prev('.commercial a').attr('data-commvideo');
+			$this = $this.prev('.commercial a');
 			$('.modal-body #commimage').attr('src', $prev+'?autoplay=1&showinfo=0&controls=0&autohide=1');
 		});	
 	});
