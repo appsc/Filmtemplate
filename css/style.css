@@ -105,7 +105,7 @@ body{
     overflow-x:visible!important;
 	/*overflow-x:scroll;*/
 	overflow: -moz-scrollbars-vertical;
-    width:250%;
+    width:144%;
     height:100%;
     position: relative;
 }
@@ -281,7 +281,7 @@ body{
     top: 40%;
     left: 40%;
     font-size:32px;
-    color:rgba(255, 0 ,0, 0);
+    color:rgba(255, 0 ,0, 1);
 }
 
 .about_logo{
@@ -304,7 +304,8 @@ body{
 
 .catagiry{
 	position: absolute;
-	left: 0;
+	left: 3%;
+	top: 25%;
 }
 
 .film{
@@ -362,6 +363,10 @@ body{
         width:100%;
         height:100%;
     }
+	
+	#gallery_sec{
+		width: 100%;
+	}
 
     .main{
     width: 100vw;
@@ -377,8 +382,11 @@ body{
 
     .gallery {
         display: block;
+		width: 100vw;
     }
-
+	.img-container {
+		padding-right: 0;
+	}
     .image{
         width: 100vw;
     }
@@ -391,7 +399,10 @@ body{
         width: calc(100vw - 30px);
         height: calc(100vh - 30px);
     }
-
+	.show-text{
+      font-size: 25px;
+      letter-spacing: 2px;
+	}
     .overlay{
         top: 40%;
         left: 40%;
@@ -399,7 +410,7 @@ body{
 
     .overlay2{
         top:2%;
-        left: 8%;
+        left: 4%;
     }
 
     .navbar-dark .navbar-nav .nav-link{
