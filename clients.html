@@ -46,12 +46,12 @@
                 <li class="nav-item d-none d-sm-block">
                     <a class="nav-link" href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
                 </li>
-                <li class="nav-item d-none d-sm-block">
-                    <a class="nav-link" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                </li>
-                <li class="nav-item d-none d-sm-block">
-                    <a class="nav-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                </li>
+                            <li class="nav-item d-none d-sm-block">
+                <a class="nav-link" href="https://www.facebook.com/pages/Chitralekha-Studios/1451233015137366"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item d-none d-sm-block">
+                <a class="nav-link" href="https://www.youtube.com/channel/UCUxsFn4nV6NjzfohZ00G0Zg/feed"><i class="fa fa fa-youtube-play" aria-hidden="true"></i></a>
+            </li>
             </ul>
         </div>
     </nav>
@@ -59,13 +59,39 @@
 <section class="container pt-4">
 <h2 class="text-center">They trusted us.</h2>
 <p class="text-center">TV, Film, Commercial, Corporate, Music, Internet..</p>
+
 <marquee onmouseover="this.setAttribute('scrollamount', 0);" onmouseout="this.setAttribute('scrollamount', 5);">
-<img src="images/client1.png" style="height: 105px;">
-<img src="images/client2.png" style="height: 105px;">
-<img src="images/client3.png" style="height: 105px;">
-<img src="images/client4.png" style="height: 105px;"> 
+<div class="client">
+<a data-toggle="modal" data-num="first" data-commvideo="https://www.youtube.com/embed/lp69jB-yvCw" data-target="#commModal">
+<img src="images/client1.png" style="height: 105px;"></a>
+<a data-toggle="modal"  data-num="2" data-commvideo="https://www.youtube.com/embed/kAr84b4K0F4" data-target="#commModal">
+<img src="images/client2.png" style="height: 105px;"></a>
+<a data-toggle="modal"  data-num="3" data-commvideo="https://www.youtube.com/embed/kAr84b4K0F4" data-target="#commModal">
+<img src="images/client3.png" style="height: 105px;"></a>
+<a data-toggle="modal" data-num="last" data-commvideo="https://www.youtube.com/embed/kAr84b4K0F4" data-target="#commModal">
+<img src="images/client4.png" style="height: 105px;"></a>
+</div>
 </marquee>
 </section>
+<!-- Modal -->
+
+<div class="modal fade" id="commModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+		    <div class="modal-body">
+			         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+					</button>
+                        <div class="embed-responsive embed-responsive-16by9">
+                    <iframe title="" id="commimage" class="embed-responsive-item" src="" allow="autoplay; encrypted-media">
+					</iframe>
+		        <button class="prev" id="prev-btn">&#10094;</button>
+				<button class="next" id="next-btn">&#10095;</button>
+				</div>
+			</div>
+        </div>
+    </div>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
@@ -75,13 +101,76 @@
 
 <script>
 $(document).ready(function() {
-$('.dropdown').on('mouseover', function(){
-$(this).find('.dropdown-menu').show();
-});
-$('.dropdown').on('mouseout', function(){
-$(this).find('.dropdown-menu').hide();
-});
-});
+	$('.dropdown').on('mouseover', function(){
+		$(this).find('.dropdown-menu').show();
+		});
+		$('.dropdown').on('mouseout', function(){
+			$(this).find('.dropdown-menu').hide();
+		});
+// Gets the video src from the data-src on each button
+    var $imageSrc4;
+	$('.client a').on('click',function() {
+			var $this = $(this);
+			$imageSrc4 = $(this).data('commvideo');
+//next and prev button's hide or show logic	
+		if($this.next('.client a').attr('data-commvideo') === undefined)
+			{
+			$('#next-btn').hide();
+			$('#prev-btn').hide();
+		}
+		else{
+			$('#next-btn').show();
+			$('#prev-btn').show();
+		}
+		if($this.data('num') == 'first'){
+				$('#prev-btn').hide();
+				$('#next-btn').show();
+			}
+			if($this.data('num') == 'last'){
+				$('#next-btn').hide();
+				$('#prev-btn').show();
+			}
+
+// next click logic			
+		$('#next-btn').on('click', function() {
+			$next = $this.next('.client a').attr('data-commvideo');
+			$this = $this.next('.client a');
+					$('.modal-body #commimage').attr('src', $next+'?autoplay=1&showinfo=0&controls=0&autohide=1');
+		if($this.data('num') == 'last'){
+				$(this).hide();
+				$('#prev-btn').show();
+			}
+		if($this.data('num') != 'last'){
+				$(this).show();
+				$('#prev-btn').show();
+			}
+		});
+// prev click logic
+		$('#prev-btn').on('click', function() {
+			$prev = $this.prev('.client a').attr('data-commvideo');
+			$this = $this.prev('.client a');
+			$('.modal-body #commimage').attr('src', $prev+'?autoplay=1&showinfo=0&controls=0&autohide=1');
+			if($this.data('num') == 'first'){
+				$(this).hide();
+				$('#next-btn').show();
+			}
+			if($this.data('num') != 'first'){
+				$(this).show();
+				$('#next-btn').show();
+			}
+		});	
+				
+	});
+// when the modal is opened autoplay it
+    $('#commModal').on('shown.bs.modal', function (e) {
+        var playvideo =  $("#commimage").attr('src', $imageSrc4+'?autoplay=1&showinfo=0&controls=0&autohide=1'  );
+	});
+// reset the modal image
+    $('#commModal').on('hide.bs.modal', function (e) {
+        // a poor man's stop video
+        $("#commimage").attr('src','');
+    })
+});// document ready
 
 </script>
 
