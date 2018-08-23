@@ -105,7 +105,7 @@ body{
     overflow-x:visible!important;
 	/*overflow-x:scroll;*/
 	overflow: -moz-scrollbars-vertical;
-    width:147%;
+    width:146%;
     height:100%;
     position: relative;
 }
@@ -130,7 +130,7 @@ body{
 }
 
 .gallery{
-    width: 115vw;
+    width: 114vw;
     height: 100%;
 	display: flex;
 	margin-left: 0px !important;
