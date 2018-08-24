@@ -111,8 +111,8 @@ body{
     /*overflow-x:scroll;*/
     overflow: -moz-scrollbars-vertical;
     margin: 0;
-    padding: 0;
-    width:154vw;
+    padding: 0 0 20px 0;
+    width:149vw;
     /*height:85vh;*/
     position: relative;
     background-color: #000000;
