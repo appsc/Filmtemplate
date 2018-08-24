@@ -13,6 +13,11 @@
     src: url(../fonts/built_titling_el.ttf);
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-family: OpenSans-Regular;
     -webkit-font-smoothing: antialiased;
@@ -103,12 +108,24 @@ body{
     overflow: hidden;
     low-y: hidden;
     overflow-x:visible!important;
-	/*overflow-x:scroll;*/
-	overflow: -moz-scrollbars-vertical;
-    width:146%;
-    height:100%;
+    /*overflow-x:scroll;*/
+    overflow: -moz-scrollbars-vertical;
+    margin: 0;
+    padding: 0;
+    width:155vw;
+    height:85vh;
     position: relative;
+    background-color: #000000;
 }
+
+.gallery{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
 .vl {
     position: fixed;
     border-left: 20px solid #ffffff;
@@ -127,14 +144,6 @@ body{
     border-right: 20px solid #ffffff;
     height: 100vh;
     right: 0;
-}
-
-.gallery{
-    width: 114vw;
-    height: 100%;
-	display: flex;
-	margin-left: 0px !important;
-	margin-right: 0px !important;
 }
 
 .wpb_wrapper{
@@ -206,6 +215,7 @@ body{
 	  padding-left: 0;
       padding-right: 3%;
 	background-color: #000000;
+      opacity: 1;
   }
 
   .image {
@@ -217,9 +227,9 @@ body{
 	opacity: 1;
   }
 
-  .img-container:hover .image {
-      opacity: 0.4;
-    }  
+.img-container:hover .image {
+    opacity: 0.4;
+    }
   
   .overlay {
       position: absolute;
@@ -349,13 +359,13 @@ body{
     padding: 2%;
     border: 1px solid silver;
 }
-
 . commercial-img{
     transition: transform .2s;
 }
 .commercial:hover{
     opacity: 0.5;
     transform: scale(1.02);
+    /*background: rgba(255, 0, 0, 0.70);*/
 }
 
 .commercial:hover .play-comm{
@@ -388,6 +398,12 @@ body{
 	z-index: 1;
 }
 
+@media (max-width:1275px) {
+   #gallery_sec {
+        width: 310vh;
+        height: 85vh;
+    }
+}
 
 @media (max-width:992px) {
 .show-text{
@@ -408,6 +424,15 @@ body{
 
 }
 
+@media (max-width: 900px) {
+    .nav-item{
+        padding-right: 0;
+    }
+    .navbar-dark .navbar-nav .nav-link{
+        font-size: 11px;
+    }
+}
+
 @media (min-width: 768px) {
     #collapsibleNavbar {
         padding: 0 15px;
@@ -426,7 +451,7 @@ body{
 	}
 
     .main{
-    width: 100vw;
+    width: 100%;
     }
 
     .main, .sub-main{
@@ -439,13 +464,16 @@ body{
 
     .gallery {
         display: block;
-		width: 100vw;
+		width: 100%;
     }
 	.img-container {
 		padding-right: 0;
 	}
     .image{
         width: 100vw;
+    }
+    .img-container:hover .image {
+        opacity: 1;
     }
 
     .showcase{
