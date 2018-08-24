@@ -399,14 +399,13 @@ body{
 }
 @media (min-width:1367px) {
    #gallery_sec {
-        width: 158vh;
+        width: 158vw;
     }
 }
 
 @media (max-width:1275px) {
    #gallery_sec {
-        width: 321vh;
-        height: 85vh;
+        width: 321vw;
     }
 }
 
