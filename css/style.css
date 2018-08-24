@@ -399,8 +399,7 @@ body{
 }
 @media (min-width:1367px) {
    #gallery_sec {
-        width: 168vh;
-        height: 85vh;
+        width: 158vh;
     }
 }
 
