@@ -37,9 +37,10 @@ $(document).ready(function() {
 	$('.modalvideo a').on('click',function() {
 		var $this = $(this);
 		$imageSrc3 = $(this).data('commvideo');
-//next and prev button's hide or show logic	
+
+		//next and prev button's hide or show logic	
 		if($this.next('.modalvideo a').attr('data-commvideo') === undefined)
-			{
+		{
 			$('#next-btn').hide();
 			$('#prev-btn').hide();
 		}
@@ -56,7 +57,7 @@ $(document).ready(function() {
 			$('#prev-btn').show();
 		}
 
-// next click logic			
+		// next click logic			
 		$('#next-btn').on('click', function() {
 			$next = $this.next('.modalvideo a').attr('data-commvideo');
 			$this = $this.next('.modalvideo a');
@@ -70,7 +71,8 @@ $(document).ready(function() {
 				$('#prev-btn').show();
 			}
 		});
-// prev click logic
+
+		// prev click logic
 		$('#prev-btn').on('click', function() {
 			$prev = $this.prev('.modalvideo a').attr('data-commvideo');
 			$this = $this.prev('.modalvideo a');
@@ -85,11 +87,13 @@ $(document).ready(function() {
 			}
 		});	
 	});
+	
 // when the modal is opened autoplay it
     $('#commModal').on('shown.bs.modal', function (e) {
         var playvideo =  $("#commimage").attr('src', $imageSrc3+'?autoplay=1&showinfo=0&controls=0&autohide=1'  );
         console.log($imageSrc3);
 	});
+	
 // reset the modal image
     $('#commModal').on('hide.bs.modal', function (e) {
         $("#commimage").attr('src','');
