@@ -113,8 +113,8 @@ body{
     overflow: -moz-scrollbars-vertical;
     margin: 0;
     padding: 0 0 20px 0;
-    width: 150.7%;
-    /* height:calc(100vh - 100px); */
+    width: 150.7vw;
+    height:calc(100vh - 100px);
     position: relative;
     background-color: #000000;
 }
