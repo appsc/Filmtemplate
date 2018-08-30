@@ -114,7 +114,7 @@ body{
     margin: 0;
     padding: 0 0 20px 0;
     width: 150.7vw;
-    height:calc(100vh - 100px);
+    height:calc(100vh - 15%);
     position: relative;
     background-color: #000000;
 }
