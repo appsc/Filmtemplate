@@ -113,8 +113,9 @@ body{
     overflow: -moz-scrollbars-vertical;
     margin: 0;
     padding: 0 0 20px 0;
-    width: 150.7vw;
-    height:calc(100vh - 15%);
+	  width: 149%;  /*6 images */
+    /*width: 119.5%;  5 images */
+	height:calc(100vh - 15%);
     position: relative;
     background-color: #000000;
 }
