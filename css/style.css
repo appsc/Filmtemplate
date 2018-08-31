@@ -429,7 +429,9 @@ body #demo .no-padding{
   padding-left: 0;
   padding-right: 0;
 }
-
+.img-client{
+height: 100px;	
+}
 /* media queries */
 
 @media (min-width:1367px) {
@@ -618,5 +620,8 @@ body #demo .no-padding{
 		width: 25%;
 		padding-left:0;
 		padding-right:8px;
+	}
+	.img-client{
+		height: 50px;	
 	}
 }
