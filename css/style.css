@@ -115,9 +115,10 @@ body{
     padding: 0 0 20px 0;
 	  width: 158.5%;  /*6 images */
     /*width: 119.5%;  5 images */
-	height:calc(100vh - 15%);
+	/* height:calc(100vh - 15%); */
+		height:85vh;
     position: relative;
-    background-color: #000000;
+    /* background-color: #000000; */
 }
 
 .gallery{
@@ -163,7 +164,7 @@ body{
 	background-image: url("../images/h9-main-image.jpg");
     background-attachment: fixed;
 	background-size: cover;
-    height: 100%;
+    height: auto;
 	/* width: 100%; */
 	background-color: #000000;
     float:left;
@@ -382,7 +383,7 @@ body{
 
 .commercial:hover .play-comm{
     opacity: 0.5;
-	background:(255, 0 ,0, 0.5)
+	background:(255, 0 ,0, 0.5);
 }
 
 .commercial:hover .commercial-img{
@@ -606,12 +607,7 @@ height: 100px;
 	.play-client{
     font-size:16px;
     }
-	
-	/* .commercial-img:hover { */
-		/* opacity: 0.5; */
-		/* transform: scale(1.05); */
-	/* } */
-	
+		
 	.commercial:hover .commercial-img{
     opacity: 0.5;
     transform: scale(1.15);
