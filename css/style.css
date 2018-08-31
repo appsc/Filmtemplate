@@ -580,6 +580,9 @@ body{
 	.commercial{
 		padding: 2%;
 	}
+	.play-client{
+    font-size:16px;
+    }
 	
 	/* .commercial-img:hover { */
 		/* opacity: 0.5; */
