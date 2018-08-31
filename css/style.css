@@ -298,6 +298,14 @@ body{
     font-size:32px;
     color:rgba(255, 0 ,0, 1);
 }
+.play-client{
+    position: absolute;
+    opacity: 0;
+    top: 40%;
+    left: 40%;
+    font-size:32px;
+    color:rgba(255, 0 ,0, 1);
+}
 
 .about_logo{
 	margin:0 auto;
@@ -361,14 +369,27 @@ body{
 	width: 100%;
     transition: transform .2s;
 }
-.commercial-img:hover{
+
+.client:hover {
+    opacity: 0.5;
+	background:(255, 0 ,0, 0.5)	
+}
+
+.client:hover .play-client{
+    opacity: 0.9;
+	background:(255, 0 ,0, 0.9)
+}
+
+.commercial:hover .play-comm{
+    opacity: 0.5;
+	background:(255, 0 ,0, 0.5)
+}
+
+.commercial:hover .commercial-img{
     opacity: 0.5;
     transform: scale(1.15);
 }
 
-.commercial:hover .play-comm{
-    opacity: 1;
-}
 
 #prev-btn, #next-btn{
 	position: absolute;
@@ -559,8 +580,15 @@ body{
 	.commercial{
 		padding: 2%;
 	}
-	.commercial-img:hover {
-		opacity: 0.5;
-		transform: scale(1.05);
-	}
+	
+	/* .commercial-img:hover { */
+		/* opacity: 0.5; */
+		/* transform: scale(1.05); */
+	/* } */
+	
+	.commercial:hover .commercial-img{
+    opacity: 0.5;
+    transform: scale(1.15);
+}
+
 }
