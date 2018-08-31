@@ -7,34 +7,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-	<style>
-.col-md-3.client{
-  display: inline-block;
-  margin-left:-4px;
-}
-.col-md-3 img{
-  width:100%;
-  height:auto;
-}
-body .carousel-indicators li{
-  background-color:red;
-}
-body .carousel-control-prev-icon,
-body .carousel-control-next-icon{
-  background-color:red;
-}
-body .no-padding{
-  padding-left: 0;
-  padding-right: 0;
-}
-@media (max-width:768px) {
-.col-xs-12.client{
-width: 25%;
-padding-left:0;
-padding-right:8px;
-}
-}
-</style>
 </head>
 <body>
 <header class="container-fluid" id="navbar">
@@ -199,7 +171,25 @@ padding-right:8px;
     <span class="carousel-control-next-icon"></span>
   </a>
 </div>
-
+</section>
+<!-- marquee section -->
+<section class="m-4">
+<div style="float:left; width:50%;">
+<marquee direction="right">
+<img src="images/client1.png" height="105px" alt=""/>
+<img src="images/client2.png" height="105px" alt=""/>
+<img src="images/client3.png" height="105px" alt=""/>
+<img src="images/client4.png" height="105px" alt=""/>
+</marquee>
+</div>
+<div style="float:right; width:50%;">
+<marquee direction="left">
+<img src="images/client4.png" height="105px" alt=""/>
+<img src="images/client3.png" height="105px" alt=""/>
+<img src="images/client2.png" height="105px" alt=""/>
+<img src="images/client1.png" height="105px" alt=""/>
+</marquee>
+</div>
 </section>
 <!-- Modal -->
 
@@ -225,30 +215,5 @@ padding-right:8px;
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
-<script>
-$(document).ready(function(){
-
- // carousel slider
-$('#carouselExample').on('slide.bs.carousel', function (e) {
-    var $e = $(e.relatedTarget);
-    var idx = $e.index();
-    var itemsPerSlide = 4;
-    var totalItems = $('#carouselExample .carousel-item').length;
-    
-    if (idx >= totalItems-(itemsPerSlide-1)) {
-        var it = itemsPerSlide - (totalItems - idx);
-        for (var i=0; i<it; i++) {
-            // append slides to end
-            if (e.direction=="left") {
-                $('#carouselExample .carousel-item').eq(i).appendTo('#carouselExample .carousel-inner');
-            }
-            else {
-                $('#carouselExample .carousel-item').eq(0).appendTo('#carouselExample .carousel-inner');
-            }
-        }
-    }
-});
-});     
-</script>
 </body>
 </html>

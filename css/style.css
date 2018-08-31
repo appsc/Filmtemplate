@@ -410,6 +410,27 @@ body{
 #next-btn{
 	right: 0.3%;
 }
+.col-md-3.client{
+  display: inline-block;
+  margin-left:-4px;
+}
+.col-md-3.client img{
+  width:100%;
+  height:auto;
+}
+body #demo .carousel-indicators li{
+  background-color:red;
+}
+body #demo .carousel-control-prev-icon,
+body #demo .carousel-control-next-icon{
+  background-color:red;
+}
+body #demo .no-padding{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* media queries */
 
 @media (min-width:1367px) {
     #gallery_sec {
@@ -592,6 +613,10 @@ body{
 	.commercial:hover .commercial-img{
     opacity: 0.5;
     transform: scale(1.15);
-}
-
+	}
+	.col-xs-12.client{
+		width: 25%;
+		padding-left:0;
+		padding-right:8px;
+	}
 }
