@@ -433,6 +433,11 @@ body #demo .no-padding{
 .img-client{
 height: 100px;	
 }
+
+.carousel-control-next, .carousel-control-prev{
+	width: 8%;
+}
+
 /* media queries */
 
 @media (min-width:1367px) {
