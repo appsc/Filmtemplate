@@ -107,21 +107,21 @@ body{
 }
 
 #gallery_sec{
-    overflow: hidden;
-    low-y: hidden;
-    overflow-x:visible!important;
-    /*overflow-x:scroll;*/
-    overflow: -moz-scrollbars-vertical;
-    margin: 0;
+	margin: 0;
     padding: 0;
 	  width: 164vw;  /*6 images */
-    /*width: 119.5%;  5 images */
-	height:calc(100vh - 15%);
-		/* height:100%; */
-    position: relative;
-    /* background-color: #000000; */
+   height:calc(100vh - 15%);
+	 position: relative;
+	 
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x:visible!important;
+    overflow-x:scroll;
+	overflow-x: auto;
 }
-
+#gallery_sec::-webkit-scrollbar {
+        display: none;
+    }
 .gallery{
     width: 100%;
     height: 100%;
@@ -446,7 +446,7 @@ height: 100px;
 
 @media (min-width:1367px) {
     #gallery_sec {
-        width: 168vw;
+        width: 175vw;
     }
 }
 @media (max-width:1360px) {

@@ -1,8 +1,8 @@
 $(document).ready(function() {
-	var winheight = $( window ).height();
-	console.log(winheight);
-	var docheight = $( document ).height();
-	console.log(docheight);
+$('#gallery_sec').mousewheel(function(e, delta) {
+        this.scrollLeft -= (delta * 40);
+        e.preventDefault();
+    });
 //menu mouseovr dropdown logic
 	$('.dropdown').on('mouseover', function(){
 		$(this).find('.dropdown-menu').show();
