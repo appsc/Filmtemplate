@@ -93,6 +93,7 @@ body{
     font-size: 13px;
     padding:.7rem 1.5rem;
     min-width: 14rem;
+	font-weight: 700;
 }
 
 .nav-item.dropdown{
@@ -161,7 +162,7 @@ body{
 }
 
 .main{
-	/* background-image: url("../images/h9-main-image.jpg"); */
+	background-image: url("../images/h9-main-image.jpg");
     background-attachment: fixed;
 	background-size: cover;
     height: auto;
