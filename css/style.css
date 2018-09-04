@@ -113,7 +113,7 @@ body{
     overflow: -moz-scrollbars-vertical;
     margin: 0;
     padding: 0 0 20px 0;
-	  width: 158.5%;  /*6 images */
+	  width: 153%;  /*6 images */
     /*width: 119.5%;  5 images */
 	height:calc(100vh - 15%);
 		/* height:100%; */
@@ -161,7 +161,7 @@ body{
 }
 
 .main{
-	background-image: url("../images/h9-main-image.jpg");
+	/* background-image: url("../images/h9-main-image.jpg"); */
     background-attachment: fixed;
 	background-size: cover;
     height: auto;
