@@ -1,4 +1,8 @@
 $(document).ready(function() {
+	var winheight = $( window ).height();
+	console.log(winheight);
+	var docheight = $( document ).height();
+	console.log(docheight);
 //menu mouseovr dropdown logic
 	$('.dropdown').on('mouseover', function(){
 		$(this).find('.dropdown-menu').show();
