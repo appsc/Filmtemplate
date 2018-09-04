@@ -112,7 +112,7 @@ body{
     /*overflow-x:scroll;*/
     overflow: -moz-scrollbars-vertical;
     margin: 0;
-    padding: 0 0 20px 0;
+    padding: 0;
 	  width: 153%;  /*6 images */
     /*width: 119.5%;  5 images */
 	height:calc(100vh - 15%);
@@ -442,7 +442,7 @@ height: 100px;
 
 @media (min-width:1367px) {
     #gallery_sec {
-        width: 172vw;
+        width: 158vw;
     }
 }
 
