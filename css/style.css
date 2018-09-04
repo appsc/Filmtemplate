@@ -22,6 +22,8 @@ max-height: 100%;
 body{
     font-family: OpenSans-Regular;
     -webkit-font-smoothing: antialiased;
+	    /* overflow-x:hidden!important; */
+
 }
 
 .bg-dark{
@@ -107,17 +109,16 @@ body{
 }
 
 #gallery_sec{
-	margin: 0;
-    padding: 0;
-	  width: 164vw;  /*6 images */
-   height:calc(100vh - 15%);
-	 position: relative;
-	 
-    overflow: hidden;
+	overflow: hidden;
     overflow-y: hidden;
     overflow-x:visible!important;
-    overflow-x:scroll;
-	overflow-x: auto;
+    overflow-x:scroll!important;;
+    overflow: -moz-scrollbars-vertical;
+   margin: 0;
+    padding: 0;
+	width: 164vw;  /*6 images */
+	height:calc(100vh - 15%);
+	position: relative;
 }
 #gallery_sec::-webkit-scrollbar {
         display: none;

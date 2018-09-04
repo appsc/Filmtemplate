@@ -1,8 +1,8 @@
 $(document).ready(function() {
-$('#gallery_sec').mousewheel(function(e, delta) {
-        this.scrollLeft -= (delta * 40);
-        e.preventDefault();
-    });
+// $('#gallery_sec').mousewheel(function(e, delta) {
+        // this.scrollLeft -= (delta * 40);
+        // e.preventDefault();
+    // });
 //menu mouseovr dropdown logic
 	$('.dropdown').on('mouseover', function(){
 		$(this).find('.dropdown-menu').show();
