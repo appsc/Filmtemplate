@@ -638,4 +638,7 @@ height: 100px;
 	.img-client{
 		height: 50px;	
 	}
+	.play-icon{
+		left: 48%;
+	}
 }
